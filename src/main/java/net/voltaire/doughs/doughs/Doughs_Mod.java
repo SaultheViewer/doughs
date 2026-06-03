@@ -1,4 +1,4 @@
-package com.voltaire.doughs.doughs;
+package net.voltaire.doughs.doughs;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -34,7 +34,7 @@ import org.slf4j.Logger;
 public class Doughs_Mod {
 
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "doughs";
+    public static final String MODID = "gingerdoughs";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
@@ -52,7 +52,7 @@ public class Doughs_Mod {
         modEventBus.addListener(this::addCreative);
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
