@@ -27,6 +27,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.voltaire.doughs.doughs.block.ModBlocks;
 import net.voltaire.doughs.doughs.item.ModCreativeModeTabs;
 import net.voltaire.doughs.doughs.item.ModItems;
 import org.slf4j.Logger;
@@ -46,6 +47,7 @@ public class Doughs_Mod {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

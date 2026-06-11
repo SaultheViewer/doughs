@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.voltaire.doughs.doughs.Doughs_Mod;
+import net.voltaire.doughs.doughs.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -23,6 +24,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.GCC.get());
                         pOutput.accept(ModItems.DCC.get());
                         pOutput.accept(ModItems.NCC.get());
+
+                        pOutput.accept(ModBlocks.SUGAR_BLOCK.get());
 
                         pOutput.accept(Items.SUGAR);
                     })
