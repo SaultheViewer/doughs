@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#t#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "t": {
+      "item": "minecraft:totem_of_undying"
+    }
+  },
+
+  "result": {
+    "item": "gingerdoughs:dcc",
+    "count": 4
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "n# ",
+    "#t#",
+    " #n"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "t": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "n": {
+      "item": "minecraft:nether_star"
+    }
+
+  },
+
+  "result": {
+    "item": "gingerdoughs:ncc",
+    "count": 4
+  }
+}
