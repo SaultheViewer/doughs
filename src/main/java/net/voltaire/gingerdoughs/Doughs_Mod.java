@@ -1,4 +1,4 @@
-package net.voltaire.doughs;
+package net.voltaire.gingerdoughs;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -11,9 +11,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.voltaire.doughs.block.ModBlocks;
-import net.voltaire.doughs.item.ModCreativeModeTabs;
-import net.voltaire.doughs.item.ModItems;
+import net.voltaire.gingerdoughs.block.ModBlocks;
+import net.voltaire.gingerdoughs.item.ModCreativeModeTabs;
+import net.voltaire.gingerdoughs.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file

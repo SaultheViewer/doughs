@@ -1,16 +1,18 @@
-package net.voltaire.doughs.block;
+package net.voltaire.gingerdoughs.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.voltaire.doughs.Doughs_Mod;
-import net.voltaire.doughs.item.ModItems;
+import net.voltaire.gingerdoughs.Doughs_Mod;
+import net.voltaire.gingerdoughs.item.ModItems;
 
 import java.util.function.Supplier;
 
@@ -20,8 +22,10 @@ public class ModBlocks {
 // add new blocks here
     public static final  RegistryObject<Block> SUGAR_BLOCK = registerBlock( "sugar_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
-
-
+// ore block example wont be used by this mod
+    public static final RegistryObject<Block> TEST_ORE = registerBlock("test_ore",
+        () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2f)
+                .requiresCorrectToolForDrops(), UniformInt.of(3,6)));
 
 
      private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
