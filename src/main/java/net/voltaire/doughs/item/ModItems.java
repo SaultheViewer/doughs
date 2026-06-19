@@ -1,10 +1,10 @@
-package net.voltaire.doughs.doughs.item;
+package net.voltaire.doughs.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.voltaire.doughs.doughs.Doughs_Mod;
+import net.voltaire.doughs.Doughs_Mod;
 import net.minecraftforge.eventbus.api.IEventBus;
 
 
