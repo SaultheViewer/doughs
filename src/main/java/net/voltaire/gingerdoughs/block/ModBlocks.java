@@ -23,9 +23,9 @@ public class ModBlocks {
     public static final  RegistryObject<Block> SUGAR_BLOCK = registerBlock( "sugar_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
 // ore block example wont be used by this mod
-    public static final RegistryObject<Block> TEST_ORE = registerBlock("test_ore",
-        () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2f)
-                .requiresCorrectToolForDrops(), UniformInt.of(3,6)));
+public static final RegistryObject<Block> TEST_ORE = registerBlock("test_ore",
+        () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3,6)));
 
 
      private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
