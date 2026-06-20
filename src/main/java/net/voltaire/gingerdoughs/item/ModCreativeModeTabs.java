@@ -9,7 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.voltaire.gingerdoughs.Doughs_Mod;
-import net.voltaire.gingerdoughs.block.ModBlocks;
+import net.voltaire.gingerdoughs.blocks.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =

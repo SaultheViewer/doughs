@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.voltaire.gingerdoughs.block.ModBlocks;
+import net.voltaire.gingerdoughs.blocks.ModBlocks;
 import net.voltaire.gingerdoughs.item.ModCreativeModeTabs;
 import net.voltaire.gingerdoughs.item.ModItems;
 import org.slf4j.Logger;
