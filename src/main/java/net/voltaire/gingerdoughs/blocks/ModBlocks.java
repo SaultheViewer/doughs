@@ -1,4 +1,4 @@
-package net.voltaire.gingerdoughs.block;
+package net.voltaire.gingerdoughs.blocks;
 
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -25,8 +25,7 @@ public class ModBlocks {
 // ore block example wont be used by this mod
 public static final RegistryObject<Block> TEST_ORE = registerBlock("test_ore",
         () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3,6)));
-
+                .strength(2f), UniformInt.of(3,6)));
 
      private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn =BLOCKS.register(name, block);
